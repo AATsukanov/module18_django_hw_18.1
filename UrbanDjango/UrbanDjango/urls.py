@@ -16,7 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+# ДОБАВЛЯЕМ НАШИ ФУНКЦИЮ И КЛАСС ИЗ ФАЙЛА:
+from task2.views import index_class, index_function
+#from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # пустой '' = значит главная страница:
+    # для классового:
+    path('', index_class.as_view()),
+    # для функционального:
+    path('index/', index_function),
 ]
