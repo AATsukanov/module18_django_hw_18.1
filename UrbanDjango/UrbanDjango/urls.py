@@ -18,13 +18,20 @@ from django.contrib import admin
 from django.urls import path
 # ДОБАВЛЯЕМ НАШИ ФУНКЦИЮ И КЛАСС ИЗ ФАЙЛА:
 from task2.views import index_class, index_function
+from task3.views import platform, games, cart
 #from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # пустой '' = значит главная страница:
+    #>> ДЗ 18.2
     # для классового:
-    path('', index_class.as_view()),
+    # path('', index_class.as_view()),
     # для функционального:
-    path('index/', index_function),
+    # path('index/', index_function),
+    #>> ДЗ 18.3
+    path('', platform),
+    path('platform', platform),
+    path('games', games),
+    path('cart', cart),
 ]
