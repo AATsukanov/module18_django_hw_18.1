@@ -17,8 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # ДОБАВЛЯЕМ НАШИ ФУНКЦИЮ И КЛАСС ИЗ ФАЙЛА:
-from task2.views import index_class, index_function
-from task3.views import platform, games, cart
+#from task2.views import index_class, index_function
+#from task3.views import platform, games, cart
+from task4.views import platform, games, cart
 #from django.views.generic import TemplateView
 
 urlpatterns = [
@@ -29,7 +30,7 @@ urlpatterns = [
     # path('', index_class.as_view()),
     # для функционального:
     # path('index/', index_function),
-    #>> ДЗ 18.3
+    #>> ДЗ 18.3, 18.4
     path('', platform),
     path('platform', platform),
     path('games', games),
