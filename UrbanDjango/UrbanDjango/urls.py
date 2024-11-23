@@ -19,7 +19,8 @@ from django.urls import path
 # ДОБАВЛЯЕМ НАШИ ФУНКЦИЮ И КЛАСС ИЗ ФАЙЛА:
 #from task2.views import index_class, index_function
 #from task3.views import platform, games, cart
-from task4.views import platform, games, cart
+#from task4.views import platform, games, cart
+from task5.views import sign_up_by_html, sign_up_by_django
 #from django.views.generic import TemplateView
 
 urlpatterns = [
@@ -31,8 +32,11 @@ urlpatterns = [
     # для функционального:
     # path('index/', index_function),
     #>> ДЗ 18.3, 18.4
-    path('', platform),
-    path('platform', platform),
-    path('games', games),
-    path('cart', cart),
+    # path('', platform),
+    # path('platform', platform),
+    # path('games', games),
+    # path('cart', cart),
+    #>> ДЗ 18.5
+    path('', sign_up_by_html),
+    path('django_sign_up', sign_up_by_django),
 ]

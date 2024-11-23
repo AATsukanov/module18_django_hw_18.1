@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # ЗДЕСЬ: в конце прописываем название нашего приложения:
-    'task2', 'task3', 'task4'
+    'task2', 'task3', 'task4', 'task5',
 ]
 
 MIDDLEWARE = [
